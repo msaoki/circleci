@@ -3,6 +3,7 @@ jobs:
   build:
     docker:
       - image: debian:stretch
+    parallelism: 2
     steps:
       - checkout
       - run:
